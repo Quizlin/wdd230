@@ -1,0 +1,16 @@
+@media only screen and (min-width: 37.5em) {
+
+    html{
+        font-size: 15px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.1em;
+        
+    }
+    #lastgrip {
+        grid-column: span 2;
+    }
+    
+    }
