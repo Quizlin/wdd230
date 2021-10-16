@@ -1,17 +1,15 @@
-const hamButton = document.querySelector('.ham');
-const mainMenu = document.querySelector('.navigation');
+const hambutton = document.querySelector('.ham');
+const mainnav = document.querySelector('.navigation')
 
-hamButton.addEventListener('click', () =>{mainMenu.classList.toggle('responsive')}, false);
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
-window.onresize = () => {
-    if(window.innerWidth > 760){
-        mainMenu.classList.remove('responsive');
-    }
-}
+// To solve the mid resizing issue with responsive class on
+window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
-const event = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+/*** Programming Notes **************************************
+  Arrow Functions - es6 syntactically compact alternative to a regular function expression
+  see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+  or https://www.w3schools.com/js/js_arrow_function.asp
 
-const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-
-console.log(event.toLocaleDateString('de-DE', options));
-// expected output: Donnerstag, 20. Dezember 2012
+  classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+  */
