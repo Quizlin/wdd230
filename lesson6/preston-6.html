@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment page for the Preston site page of week 5 in WDD 230.">
+    <title>WDD 230 &bull; Week 5 &bull; Preston Town Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    
+</head>
+<body>
+    <div id="pancake"><h1 class="banner">Saturday = Preston Pancakes in the Park!<br>9:00 a.m. Saturday at the city park!</h1></div>
+    <header>
+        <img src="images/wwu.jpg" alt="Logo">
+        <section class="headings">
+            <h1>Web Weather Update</h1>
+            <div class="moto">Weather at your fingertips!</div>
+        </section>
+    </header>  
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    </nav>
+    <main>
+        <div class="page"> 
+            <h1>Preston</h1>
+        </div>
+        <section class="weatherSummary">
+            <h3>Weather Summary</h3>
+            
+            <picture>
+                <source media="(max-width: 32.5em)"
+                 srcset="/lesson6/images/small.jpg"
+                 />
+                <source media="(max-width: 65em)"
+                 srcset="/lesson6/images/medium.jpg"
+                 />
+                <img src="/lesson6/images/large.jpeg" alt="hero-image" id="hero-image">
+            </picture>
+            
+            <div class="summaryInset">
+                <p> Currently: Sunny</p>
+                <p> Temperature: 65ºF</p>
+                <p>Wind Chill: <span id="windchill"></span> °F</p>
+                <p> Humidity: 32%</p>
+                <p> Wind Speed: 4 MPH</p>
+            </div>
+        </section>
+
+        <section class="fiveDayForcast">
+            <h3>5 Day Forcast</h3>
+            <div class="flex">
+                <div class="col">
+                    <span class="label">Monday</span>
+                    <img src="images/cloud_light.png" alt="cloudy with lightning icon">
+                    <span class="data">High Temp<br>50º</span>
+                </div>
+                <div class="col">
+                    <span class="label">Tuesday</span>
+                    <img src="images/cloud snow.jpg" alt="cloudy with snow icon">
+                    <span class="data">High Temp<br>35º</span>
+                </div>
+                <div class="col">
+                    <span class="label">Wednesday</span>
+                    <img src="images/sun.png" alt="sun icon">
+                    <span class="data">High Temp<br>60º</span>
+                </div>
+                <div class="col">
+                    <span class="label">Thursday</span>
+                    <img src="images/rain cloud.png" alt="rain cloud icon">
+                    <span class="data">High Temp<br>45º</span>
+                </div>
+                <div class="col">
+                    <span class="label">Friday</span>
+                    <img src="images/snow.png" alt="snowicon">
+                    <span class="data">High Temp<br>30º</span>
+                </div>
+        </section>
+
+        <section class="article">
+            
+            <h3>Article Title</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar, diam non ullamcorper semper, lectus metus posuere odio, at tristique mauris sem eget quam. Integer ligula mauris, malesuada eget felis vel, semper viverra ligula. Vestibulum eleifend congue ipsum a convallis. Suspendisse potenti. Cras sit amet tempus orci. Aliquam nec metus dui. Morbi et nunc id justo vestibulum faucibus at ac erat. Suspendisse eget iaculis augue, in faucibus sapien. Aliquam molestie ligula sit amet risus rhoncus suscipit. Etiam ultricies, libero dictum elementum ultricies, tortor lacus eleifend lorem, eu maximus augue mi eget ligula. In hac habitasse platea dictumst.
+
+            Vestibulum placerat pharetra ipsum a tincidunt. Mauris pretium, lacus ut faucibus pharetra, purus mi viverra sapien, a pellentesque mauris sapien vel massa. Nullam et orci augue. Integer in volutpat nisl. Nulla ut neque vitae metus fringilla congue. Sed at urna mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vehicula felis et volutpat semper. Donec tincidunt eros sed convallis consequat. Fusce id iaculis sapien. Nam quis tempor arcu.</p>
+            <img src="images/pexels-pixabay-36744.jpg" alt="tree">
+            
+        </section>
+
+        <section class="contactInformation">
+            <h3>Contact Information</h3>
+            <section id="contactGrid">
+                <div class="column">
+                <img src="images/mappres.png" width="100%" 
+                height="100%" alt="map of preston">
+                </div>
+                <div class="column">
+                    
+                    <p>Phone: 555-555-5309</p>
+                    <p>Email: webweatherupdate@donotemail.org</p>
+                    <p>Address: 123 Any Street, Preston Idaho, 12345</p>
+                
+                 </div>
+            </section>
+        </section>
+    
+    </main>
+    <footer>
+        <p>
+            &copy; 2021 | Christopher Bertagnolli | California |
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+            <br/>
+            <span id="currentdate"></span>
+            <span id="date"></span>
+            
+            <script src = "js/date.js"></script>
+            <script src="/lesson5/js/menu.js"> </script>
+            <script src="/lesson5/js/pancake.js"></script>
+            <script src="js/windchill.js"></script>
+            
+          </p>
+    </footer>
+    
+    
+</body>
+</html>
