@@ -1,0 +1,39 @@
+@media only screen and (min-width: 768px){
+    .navigation {
+        display: flex;
+        padding: 0px;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation li a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+   
+    footer img {
+        display: inline;
+        position: relative;
+        padding-left: 15%;
+        padding-top: 25px;
+        min-width: 250px;
+
+    }
+    footer div {
+        margin-left: 50%;
+        border-style: none;
+        background-color: #36454f;
+        padding: 10px;
+    }
+    .gallery {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .hover:hover {
+        box-shadow: 0 0 10px black;
+    }
+}
