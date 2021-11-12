@@ -1,0 +1,64 @@
+div {
+    background-color: lightgray;
+    box-shadow: 0 0 10px black;
+    padding:5px;
+}
+section {
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    background-color: lightslategray;
+    border: 1px solid darkblue;
+    text-align: center;
+    font-family: 'Crete Round', serif;
+}
+h1 {
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    color: darkblue;
+}
+h2 {
+    margin: 5px;
+    color: darkblue;
+}
+p {
+    font-family: 'Oswald', sans-serif;
+    margin: 5px;
+}
+img {
+    position: relative;
+    max-width: 200px;
+    box-shadow: 0 0 10px black;
+    bottom: 0px;
+}
+
+
+@media only screen and (min-width: 600px){
+    .cards {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr;
+        margin: 0px;
+    }
+    section {
+        margin: 2.5px;
+    }
+    div {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1150px){
+    .cards {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0px;
+    }
+    section {
+        margin: 2.5px;
+    }
+    div {
+        padding: 10px;
+    }
+}
