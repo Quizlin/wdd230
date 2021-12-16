@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment page for the Preston site page of week 6 in WDD 230.">
+    <title>WDD 230 &bull; Week 5 &bull; Preston Town Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    
+</head>
+<body>
+    <div id="pancake"><h1 class="banner"></h1></div>
+    <header>
+        <img src="images/The-City-of-San-Jose-California-Issues-Communications-RFP.png" alt="Logo">
+        <section class="headings">
+            <h1>City of San Jose</h1>
+            <div class="moto">Capitol of Silicon Valley</div>
+        </section>
+    </header>  
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="/lesson12/finalhome.html">Home</a></li>
+            <li><a href="/lesson12/San jose.html">San Jose</a></li>
+            <li class="active"><a href="/lesson12/Join.html">Join</a></li>
+            <li><a href="/lesson12/Directory.html">Directory</a></li>
+            <li><a href="/lesson12/Contact.html">Contact</a></li>
+         
+    </nav>
+    </nav>
+    <main>
+      
+        
+        
+        </div>
+        <section class="weatherSummary">
+            <h3>Chamber Membership Application</h3>
+
+            
+            
+            <h3></h3>
+            <form>
+            <div>
+            <label for="fullname">First Name:<span id="required">*</span></label>
+            <input type="text" id="fullname" minlength="5" pattern="[A-Za-z]"  required>
+            </div>
+            <div>
+                <label for="fullname">Last Name:<span id="required">*</span></label>
+                <input type="text" id="fullname" minlength="5" pattern="[A-Za-z]"  required>
+                </div>
+    
+            <div>
+            <label for="number">Title:</label>
+            <input type="tel" id="number">
+            </div>
+    
+            <div>
+                <label for="email">Email:<span id="required">*</span></label>
+        <input type="email" id="email" placeholder="abc@123.com" required>
+        </div>
+                </div>
+    
+            <div>
+                <label for="fullname">Cell Phone:</label>
+                <input type="text" id="fullname" minlength="5" pattern="[A-Za-z]"  >
+                </div>
+    
+                <div>
+                    <label for="fullname">Business Name:<span id="required">*</span></label>
+                    <input type="text" id="fullname" minlength="5" pattern="[A-Za-z]"  required>
+                    </div>
+
+                    <div>
+                        <label for="fullname">Business Address:</label>
+                        <input type="text" id="fullname" minlength="5" pattern="[A-Za-z]"  >
+                        </div>
+                        
+                        <div>
+                            <label for="fullname">Business Website:</label>
+                            <input type="text" id="fullname" minlength="5" pattern="[A-Za-z]"  >
+                            </div>
+                    
+                            <div>
+                                <label for="fullname">Business Description:</label>
+                                <input type="text" id="fullname" minlength="5" pattern="[A-Za-z]"  >
+                                </div>      
+    
+            
+            <div>
+            <label for="region">Membership Level:</label>
+            <select id="region">
+                <option selected="true" disabled="disabled">Select Level...</option>
+                <option value="Non-profit ($100)">Non-profit ($100)</option>
+                <option value="Bronze ($200)">Bronze ($200)</option>
+                <option value="Silver ($400)">Silver ($400)</option>
+                <option value="Gold ($1000)">Gold ($1000)</option>
+
+
+            </select>
+            </div>
+    
+            
+            <div>
+            <label for="comments">Additional Information or Comments:</label> </br>
+            <textarea id="comments" rows="4" cols="45">
+            </textarea>
+            </div>
+    
+            <div id="button">
+            <input onclick="window.location.href='thanks.html'" id="submit" value="Send Form" type="submit" />
+            </div>
+    
+            </form>
+    
+            <datalist id ="stormtypes">
+                <option value="Flash Flood">
+                <option value="Hail"> 
+                <option value="Hurricane"> 
+                <option value="Thunderstorm">
+                <option value="Tornado">  
+            </datalist>
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+              </datalist>
+           
+
+
+
+    </main>
+    <footer>
+        <p>
+            &copy; 2021 | Christopher Bertagnolli | California |
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+            <br/>
+            <span id="currentdate"></span>
+            <span id="date"></span>
+            
+            <script src = "js/date.js"></script>
+            <script src="/lesson6/js/menu.js"> </script>
+            <script src="/lesson6/js/pancake.js"></script>
+            <script src="/lesson6/js/windchill.js"></script>
+            <script src="js/weatherapi.js"></script>
+            
+          </p>
+    </footer>
+    
+    
+</body>
+</html>
