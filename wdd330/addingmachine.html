@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Activity 01</title>
+</head>
+<body>
+  <div>
+    <input type="text" id="number">
+    <input type="text" id="number2">
+    <button id="button1" onclick="sum()">Sum</button>
+    <button id="addButton" onclick="add()">Add</button>
+    <button id="subButton" onclick="(subtract())">Subtract</button>
+    <button id="multiply" onclick="(multiply())">Multiply</button>
+    <div id="content"></div>
+  </div>
+</body>
+</html>
+<script>
+  function sum() {
+    let givenNumber = parseInt(document.getElementById('number').value)
+    let answer = 0;
+
+    const contentDiv = document.getElementById('content');
+
+    for (let i = 0; i < givenNumber + 1; i++) {
+      answer += i;
+    }
+
+    contentDiv.innerHTML = answer;
+  }
+
+  function add() {
+    let num1 = parseInt(document.getElementById('number').value);
+    let num2 = parseInt(document.getElementById('number2').value);
+
+    const contentDiv = document.getElementById('content');
+
+    contentDiv.innerHTML = num1 + num2;
+  }
+
+  const subtract = () => {
+    let num1 = parseInt(document.getElementById('number').value);
+    let num2 = parseInt(document.getElementById('number2').value);
+
+    const contentDiv = document.getElementById('content');
+
+    contentDiv.innerHTML = num1 - num2;
+  }
+
+  const multiply = function() {
+    let num1 = parseInt(document.getElementById('number').value);
+    let num2 = parseInt(document.getElementById('number2').value);
+
+    const contentDiv = document.getElementById('content');
+
+    contentDiv.innerHTML = num1 * num2;
+  };
+
+</script>
