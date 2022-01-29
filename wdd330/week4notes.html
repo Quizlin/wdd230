@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      Week 3 Notes | Christopher Bertagnolli | BYU-Idaho
+    </title>
+
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+   
+  </head>
+  <body>
+    <header>
+      <h1>Christopher Bertagnolli</h1>
+    
+    </header>
+
+    <nav></nav>
+    <main>
+      <h2>CIT 330: Week 4 Notes</h2>
+      <ul>
+
+        Notes:<br><br>
+
+        * Group meeting on Friday - Not very productive - Still required many hours of my own research before and after to do the assignment.<br><br>
+        * Tic-Tac-Toe - Found a differnt way to create the board using "If" statements.<br><br>
+        * Box code<br>
+        * Self Reminder note:<br><br>
+        const drawBoard = () => {<br>
+          boxes.forEach((box, i) => {<br>
+            let styleString = '';<br>
+            if (i < 3) {<br>
+              styleString += 'border-bottom: 3px solid var(--text);';<br>
+            }<br><br>
+        * Learned how to create other "If" statments to check after each move if the game was done and show the winner.<br><br>
+       Self Reminder note:<br><br>
+        if (spaces[0] === currentPlayer) {<br>
+          if (spaces[1] === currentPlayer && spaces[2] === currentPlayer) {<br>
+            strategy.innerText = `${currentPlayer} wins up on top`;<br>
+            return true;<br><br>
+        
+        * Draw Code
+            * Self Reminder note:<br><br>
+
+        const playerDraw = () => {<br>
+          let draw = 0;<br>
+          spaces.forEach((space, i) => {<br>
+            if (spaces[i] !== null) draw++;<br>
+          });<br>
+          if (draw === 9) {<br>
+            text.innerText = `Cats Game! (Draw)`;<br>
+          }<br>
+        };<br><br>
+
+        * Read the chapters<br>
+        * Notes:<br>
+        * Not quite sure what notes to write for the reading - If I have any questions or confusions I refer back to the book.<br><br>
+
+
+        * Comparing Code:<br>
+            * Self Reminder Notes:<br><br>
+            * Was unfamilar with "nth-child" - reviewed the teachers code example and have a better understanding.<br>
+            * See Saved copy of example for future reference. <br>
+            * See "HTML Examples - W3Schools" website for better understanding.
+         <br><br>
+   
+
+
+    
+        
+        <br>Question:<br><br>
+
+        1. Why do we have the group meetings? I feel like they are not worth the effort and time scheduling. We were only able to get <br>
+        through the basic frame of the board in the hour. I still have to spend hours on my own figuring the code out. 
+        <br><br>
+
+      </ul>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022 | Christopher Bertagnolli | California |
+        <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        <br />
+        <script src="javascript/java.js"></script>
+      </p>
+    </footer>
+  </body>
+</html>
