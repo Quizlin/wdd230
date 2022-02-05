@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      Week 5 Notes | Christopher Bertagnolli | BYU-Idaho
+    </title>
+
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+   
+  </head>
+  <body>
+    <header>
+      <h1>Christopher Bertagnolli</h1>
+    
+    </header>
+
+    <nav></nav>
+    <main>
+      <h2>CIT 330: Week 5 Notes</h2>
+      <ul>
+
+        Read chapter 10 testing and debugging.<br><br>
+
+        1. The most basic form of debugging is to use the alert() method to show a dialog at certain points in the code. Because alert() stops a program <br>
+        from running until OK is clicked, it allows us to effectively put breakpoints in the code that let us check the value of variables at that point to <br>
+        see if they’re what we expect them to be.<br><br>
+        
+        
+        2. There are seven more error objects used for specific errors:<br>
+
+        EvalError is not used in the current ECMAScript specification and only retained for backwards compatibility. It was used to identify errors when using the global eval() function.<br>
+        
+        RangeError is thrown when a number is outside an allowable range of values.<br>
+        
+        ReferenceError is thrown when a reference is made to an item that doesn’t exist. For example, calling a function that hasn't been defined.<br>
+        
+        SyntaxError is thrown when there’s an error in the code’s syntax.<br>
+        
+        TypeError is thrown when there’s an error in the type of value used; for example, a string is used when a number is expected.<br>
+        
+        URIError is thrown when there’s a problem encoding or decoding the URI.<br>
+        
+        InternalError is a non-standard error that is thrown when an error occurs in the JavaScript engine. A common cause of this too much recursion.<br>
+        <br><br>
+        3. Test-driven Development<br><br>
+        Test-driven development (TDD) is the process of writing tests before any actual code. Obviously these tests will initially fail, because there is no code to test.<br>
+         The next step is to write some code to make the tests pass. After this, the code is refactored to make it faster, more readable, and remove any repetition. The code <br>
+         is continually tested at each stage to make sure it continues to work. This process should be followed in small piecemeal chunks every time a new feature is implemented, <br>
+         resulting in the following workflow:
+        <br>
+        Write tests (that initially fail)
+        <br>
+        Write code to pass the tests
+        <br>
+        Refactor the code
+        <br>
+        Test refactored code
+        <br>
+        Write more tests for new features
+        <br>
+        This is often referred to as the “red-green-refactor” cycle of TDD, as failing tests usually show up as red, and tests that pass show as green.
+        <br>
+        <br>Question:<br><br>
+
+        1. None 
+        <br><br>
+
+      </ul>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022 | Christopher Bertagnolli | California |
+        <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        <br />
+        <script src="javascript/java.js"></script>
+      </p>
+    </footer>
+  </body>
+</html>
