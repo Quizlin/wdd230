@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      Week 7 Notes | Christopher Bertagnolli | BYU-Idaho
+    </title>
+
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+   
+  </head>
+  <body>
+    <header>
+      <h1>Christopher Bertagnolli</h1>
+    
+    </header>
+
+    <nav></nav>
+    <main>
+      <h2>CIT 330: Week 7 Notes</h2>
+      <ul>
+ 
+
+        Chapter 11 Notes:<br><br>
+
+******************************************<br><br>
+Temporary Variables        <br><br>
+This process requires the use of a temporary variable, called temp, which only exists while the IIFE is invoked:
+
+Copy
+let a = 1;
+let b = 2;
+
+(()=>{
+    const temp = a;
+    a = b;
+    b = temp;
+})();
+
+a;
+<< 2
+
+b;
+<< 1
+<br><br>
+console.log(temp);
+<< Error: "temp is not defined"<br><br>
+This shows the variable temp does not exist after the function has been invoked.
+
+Note that this technique is not needed to swap the values of two variables in ES6, as destructuring can be used, as shown below:
+<br><br>
+Copy
+let [a,b] = [1,2];
+[a,b] = [b,a];<br><br>
+
+a;
+<< 2
+
+b;
+<< 1 <br><br>
+******************************************
+<br><br>
+Note: refer back to this chapter 11 for examples on how to code functions of <br>
+math, arrays and returning other functions. <br><br>
+
+   
+<br><br>
+******************************************
+<br><br>
+Chapter 13 <br><br>
+
+The XMLHttpRequest object was finally standardized by the WHATWG and W3C as part of the HTML5 specification,<br> despite it originally being implemented by Microsoft many years earlier, and already available in most browsers.
+<br><br>
+
+<br><br>
+******************************************
+<br><br>
+
+Used Sandbox for practise some code from chapters 11 & 13.
+
+// Run code here in the context of Chapter 11<br><br>
+2<br><br>
+​
+3<br><br>
+findInStorage(bigOak, "events on 2017-12-21")<br><br>
+4<br><br>
+  .then(console.log);<br><br>
+5<br><br>
+​<br><br>
+Deep snow. Butcher's garbage can fell over. We chased off the ravens from Saint-Vulbas.
+<br>These files contain this chapter’s project code:
+<br>crow-tech.js
+<br>chapter/11_async.js
+
+<br><br>
+******************************************
+<br><br>
+
+    
+        
+        <br>Question:<br><br>
+
+    No questions this week. Things are going ok. Notes are not long since not much reading.
+    I read over all the chapters and my own research to get the assignment working this week.
+    Took a while to get the new hiking app working.
+        <br><br>
+
+      </ul>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022 | Christopher Bertagnolli | California |
+        <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        <br />
+     
+      </p>
+    </footer>
+  </body>
+</html>
