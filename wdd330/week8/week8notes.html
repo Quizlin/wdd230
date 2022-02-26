@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      Week 7 Notes | Christopher Bertagnolli | BYU-Idaho
+    </title>
+
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+   
+  </head>
+  <body>
+    <header>
+      <h1>Christopher Bertagnolli</h1>
+    
+    </header>
+
+    <nav></nav>
+    <main>
+      <h2>CIT 330: Week 8 Notes</h2>
+      <ul>
+ 
+
+        Chapter 8 Notes:<br><br>
+
+******************************************<br><br>
+
+Scaling
+The scale(x,y) function scales an element by the defined factors horizontally then vertically. If only one value is provided, it will be used <br> for both the x and y values, growing or shrinking your element or pseudo-element while maintaining the original aspect ratio. <br>For example, scale(1) would leave the element the same size, scale(2) would double its proportions, scale(0.5) would halve them, and so on
+
+<br><br>
+******************************************
+<br><br>
+
+Rotation
+The rotate() function rotates an element around the point of origin by a specified angle value. As with scale, by default the point of origin is <br>the element’s center. Generally, angles are declared in degrees, with positive degrees moving clockwise and negative moving 
+<br>counterclockwise. In addition to degrees, values can be provided in grads, radians, or turns, but we’ll just be sticking with degrees.
+<br><br>
+Let’s add a rotate transform to our “dukes”:
+<br><br>
+Copy
+.ad-ad2 h1:hover span {
+    color: #484848;
+    transform: rotate(10deg) translateX(40px) scale(1.5);
+}<br><br>
+We’re rotating our span by ten degrees clockwise—adding to the effect of text that’s just been dealt a powerful uppercut. We are declaring the rotation before<br>
+ the translate so that it’s applied first—remember that transforms are applied in the order provided. In this case, the span will be rotated 10 degrees, and then <br>
+  moved 40px along the rotated x axis.
+<br><br>
+
+   
+
+******************************************
+<br><br>
+Chapter 12 Notes: <br><br>
+******************************************
+
+<br><br>
+
+Canvas <br><br>
+With HTML5’s Canvas API, we can draw anything we can imagine, all through JavaScript. This can improve the performance of our websites by avoiding the need to download images off the network. 
+<br><br>
+**Did not know about this way of creating images to load faster**
+<br><br>
+
+
+<br><br>
+******************************************
+<br><br>
+VG stands for Scalable Vector Graphics, a specific file format that allows you to describe vector graphics using XML. A major selling point of vector graphics in general is that, unlike <br>
+bitmap images (such as GIF, JPEG, PNG, and TIFF), vector images preserve their quality even as you blow them up or shrink them down.<br><br>
+** Best image type for editting photos and decorating websites because it doesn't lose its quality based on resolution**
+<br><br>
+
+
+<br><br>
+******************************************
+<br><br>
+
+    
+        
+        <br>Question:<br><br>
+
+        NO questions this week. Things are going fine. Lots of reading and self study to understand these assginemnts. 
+
+        <br><br><br><br><br><br>
+
+      </ul>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022 | Christopher Bertagnolli | California |
+        <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        <br />
+     
+      </p>
+    </footer>
+  </body>
+</html>
