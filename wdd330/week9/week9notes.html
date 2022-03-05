@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      Week 9 Notes | Christopher Bertagnolli | BYU-Idaho
+    </title>
+
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+   
+  </head>
+  <body>
+    <header>
+      <h1>Christopher Bertagnolli</h1>
+    
+    </header>
+
+    <nav></nav>
+    <main>
+      <h2>CIT 330: Week 9 Notes</h2>
+      <ul>
+ 
+
+        Chapter 14 Notes:<br><br>
+
+******************************************<br><br>
+
+The Web Storage API has some crucial differences with cookies:<br>
+
+Information stored is not shared with the server on every request.<br>
+
+Information is available in multiple windows of the browser (but only if the domain is the same).<br>
+
+Storage capacity limit is much larger than the 4KB limit for cookies ( There is no actual limit in the specification, but most browsers have a limit set at 5GB per domain.).<br>
+
+Any data stored does not automatically expire as it does with cookies. This potentially makes cookies a better choice for something like showing a popup once a day.<br>
+
+
+<br><br>
+******************************************
+<br><br>
+The canvas element was introduced to allow graphics to be drawn onto a web page in real time using JavaScript. A canvas element is a rectangular element on the web page.<br>
+ It has a coordinate system that starts at (0,0) in the top-left corner. To add a canvas element to a page, the canvas tag is used specifying a height and width. Anything<br>
+placed inside the tag will only display if the canvas element is unsupported:
+<br><br>
+******************************************
+
+<br><br>
+HTML5 APIs progress at a rapid rate ― new APIs are constantly being introduced, and existing APIs often change. Modern browsers are very quick to update and implement many<br>
+ of the changes, but you can’t always guarantee that users will have the most up-to-date browser. This is where a shim or a polyfill comes in handy. These are libraries of code<br>
+  that allow you to use the APIs as usual. They then fill in the necessary code that's not provided natively by the user’s browser. This means that your code can use the APIs as<br>
+   normal and it should work as expected in older browsers. The advantage here is that the same set of standard API commands can be used ― you don’t need to write additional code<br>
+   to deal with different levels of support. And when users update their browsers, the transition will be seamless, as their experience will remain the same. Once you are confident<br>
+    that enough users have up-to-date browsers, you can remove the polyfill code without having to update any actual JavaScript code.
+<br><br>
+******************************************
+<br><br>
+
+
+   
+
+******************************************
+<br><br>
+Chapter 9 Notes: <br><br>
+******************************************
+
+<br><br>
+Remember that JavaScript can be run in different environments. The BOM only makes sense in a browser environment. This means that other environments (such as Node.js) probably won’t<br>
+ have a window object, although they will still have a global object; for example, Node.js has an object called global.
+ <br><br>
+ ******************************************
+<br><br>
+
+Cookies are small files that are saved locally on a user’s computer. They were invented by Netscape as a way of getting round HTTP being a stateless protocol. This means that a browser <br>
+does not remember anything from one request to another. So every time a user visits a page, nothing about any previous visits is remembered. Cookies can be used to sidestep this problem <br>
+by storing information that can then be retrieved between requests.
+<br><br>
+******************************************
+<br><br>
+These methods were largely responsible for giving JavaScript a bad name, as they were used for creating annoying pop-up windows that usually contained intrusive advertisements. It’s also <br>
+a bad idea from a usability standpoint to resize or move a user’s window.<br>
+
+Many browsers block pop-up windows and disallow some of these methods to be called in certain cases. For example, you can’t resize a window if more than one tab is open. You also can’t move <br>
+or resize a window that wasn’t created using window.open().<br>
+
+It’s rare that it would be sensible to use any of these methods, so think very carefully before using them. There will almost always be a better alternative, and a ninja programmer will endeavor<br>
+ to find it.
+
+<br><br>
+
+******************************************
+
+<br><br>
+
+    
+        
+        <br>Question:<br><br>
+
+        No questions, Each week is mostly self research to understand. Fine so far. 
+
+        <br><br><br><br><br><br>
+
+      </ul>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022 | Christopher Bertagnolli | California |
+        <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        <br />
+     
+      </p>
+    </footer>
+  </body>
+</html>
