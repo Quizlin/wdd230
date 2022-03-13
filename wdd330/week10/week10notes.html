@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      Week 10 Notes | Christopher Bertagnolli | BYU-Idaho
+    </title>
+
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+   
+  </head>
+  <body>
+    <header>
+      <h1>Christopher Bertagnolli</h1>
+    
+    </header>
+
+    <nav></nav>
+    <main>
+      <h2>CIT 330: Week 10 Notes</h2>
+      <ul>
+ 
+
+        MDN: Validating forms Notes:<br><br>
+
+******************************************<br><br>
+
+
+Using built-in form validation<br><br>
+One of the most significant features of HTML5 form controls is the ability to validate most user data without relying on JavaScript. This is done by using validation attributes on form elements. We've seen many of these earlier in the course, but to recap:
+<br><br>
+required: Specifies whether a form field needs to be filled in before the form can be submitted.
+minlength and maxlength: Specifies the minimum and maximum length of textual data (strings)<br><br>
+min and max: Specifies the minimum and maximum values of numerical input types<br><br>
+type: Specifies whether the data needs to be a number, an email address, or some other specific preset type.<br><br>
+pattern: Specifies a regular expression that defines a pattern the entered data needs to follow.<br><br>
+
+******************************************
+<br><br>
+Most of the page was examples and explainations on the same topic, I was able to go over them<br>
+and use them in the project this week.
+<br><br>
+
+******************************************
+<br><br><br><br><br>
+MDN: Using Fetch Notes: <br><br>
+******************************************
+
+<br><br>
+Uploading a file<br>
+Files can be uploaded using an HTML (input type file) input element, FormData() and fetch().<br><br>
+
+const formData = new FormData();<br>
+const fileField = document.querySelector('input[type="file"]');<br><br>
+
+formData.append('username', 'abc123');<br>
+formData.append('avatar', fileField.files[0]);<br><br>
+
+fetch('https://example.com/profile/avatar', {<br>
+  method: 'PUT',<br>
+  body: formData<br>
+})<br>
+.then(response => response.json())<br>
+.then(result => {<br>
+  console.log('Success:', result);<br>
+})<br>
+.catch(error => {<br>
+  console.error('Error:', error);<br>
+});<br>
+
+******************************************
+
+<br><br><br><br>
+    
+        
+        <br>Question:<br><br>
+
+        No questions, Each week is mostly self research, trial and error, to understand.
+
+        <br><br><br><br><br><br>
+
+      </ul>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022 | Christopher Bertagnolli | California |
+        <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        <br />
+     
+      </p>
+    </footer>
+  </body>
+</html>
